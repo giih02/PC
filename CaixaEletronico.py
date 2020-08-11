@@ -140,11 +140,67 @@ def administracao():
         print("Opcão incorreta, por favor digite novamente...")
         administracao() 
 
+     ## o codigo abaixo está apresentando algum problema cuja dupla não conseguiu resolver  
+'''def cliente():
+    def existe_cliente(dados, nome):
+
+    dados = open("dados","w")
+    if len(dados) > 0:
+
+        for existe_cliente in dados:
+            if existe_cliente['nome'] == nome:
+                 return True
+    return False
+
+def cadastro():
+
+    dados = open("dados", "w"),
+    nome = input('Digite o nome do banco: '),
+    cnpj = input('Digite o CNPJ: ')
+
+    dados = open('dados','a')
+    dados.write('%s %s, %d, %s\n'%(nome,cnpj))
+    dados.close()
+
+    print("Parabéns, {} teve o cadastrado realizado!\n".format(nome))
+
+def principal():
+
+    while True:
+        time.sleep(2)
+        os.system("cls")
+        print("*CLIENTE**")
+        print("1 - Cadastro")
+        print("2 - Alterar ")
+        print("3 - Excluir ")
+        print("4 - Buscar  ")
+        print("5 - Listar  ")
+        print("6 - Sair do sistema Banco")
+        opcao = int(input("Digite o opção que deseja:"))
+
+        if opcao == 1:
+            cadastro()
+        elif opcao == 2:
+            pass
+        elif opcao == 3:
+            pass
+        elif opcao == 4:
+            pass
+       elif opcao == 5
+            pass
+        elif opcao == 6:
+            print("Saindo do programa, até mais.")
+            break
+        else:
+            print("Não está configura ou é inválida, por favor tente novamente.")
+            principal()
+      ## o codigo acima está apresentando alguns problemas cuja dupla não conseguiu resolver     ''' 
 def principal():
         print("===BANCO DIGITAL===")
         print("1 - Movimentação")
-        print("2 - Administração")       
-        print("3 - Sair")
+        print("2 - Administração")
+        print("3 - Cliente")       
+        print("4 - Sair")
         opcao = int(input("Digite o opção desejada:"))
 
         if opcao == 1:
@@ -152,6 +208,8 @@ def principal():
         elif opcao == 2:
             administracao()
         elif opcao == 3:
+            cliente()
+        elif opcao == 4:
             print("Saindo do programa...")
             print("Obrigada e Até mais!")
             exit()
